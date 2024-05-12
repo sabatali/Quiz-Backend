@@ -43,6 +43,10 @@ async function search(query) {
   }
 }
 
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
 app.post("/search", async (req, res) => {
   try {
     const searchText = req.body.text;
